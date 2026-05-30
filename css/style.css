@@ -3,7 +3,8 @@
 	font-family: 'Montserrat', sans-serif;
 }
 body {
-	background: #f1fbff;
+	background: #fff8ed;
+	color: #1f2933;
 }
 .section-padding {
 	padding: 100px 0;
@@ -16,6 +17,8 @@ body {
 	bottom: 220px;
 	z-index: 2;
 }
+.carousel-caption h1,
+.carousel-caption h2,
 .carousel-caption h5 {
 	font-size: 45px;
 	text-transform: uppercase;
@@ -35,7 +38,7 @@ body {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: rgba(0, 0, 0, 0.7);
+	background: linear-gradient(90deg, rgba(16, 24, 40, 0.82), rgba(16, 24, 40, 0.45));
 	z-index: 1;
 }
 .navbar .getstarted {
@@ -53,7 +56,8 @@ body {
 	text-transform: uppercase;
 	font-weight: 500;
 }
-.navbar-light .navbar-brand {
+.navbar-light .navbar-brand,
+.navbar-brand {
 	color: #000;
 	font-size: 25px;
 	text-transform: uppercase;
@@ -78,10 +82,10 @@ body {
 	line-height: 0.3;
 	background: #fff;
 }
-.portfolio .card {
-	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
-}
-.team .card {
+.portfolio .card,
+.team .card,
+.services .card {
+	border: 0;
 	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
 }
 .services .card-body i {
@@ -111,8 +115,10 @@ body {
 	.carousel-caption {
 		bottom: 125px;
 	}
+	.carousel-caption h1,
+	.carousel-caption h2,
 	.carousel-caption h5 {
-		font-size: 17px;
+		font-size: 26px;
 	}
 	.carousel-caption a {
 		padding: 10px 15px;
@@ -129,4 +135,64 @@ body {
 	.card {
 		margin-bottom: 30px;
 	}
+}
+.section-header h2,
+.about-text h2 {
+	color: #17324d;
+	font-weight: 700;
+}
+
+.mini-stat {
+	background: #ffffff;
+	border-left: 5px solid #ffc107;
+	border-radius: 14px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+	padding: 18px;
+}
+
+.mini-stat strong {
+	display: block;
+	font-size: 28px;
+	color: #17324d;
+}
+
+.mini-stat span {
+	color: #5b6673;
+}
+
+.services .card {
+	background: linear-gradient(145deg, #17324d, #0f172a) !important;
+	border-radius: 22px;
+}
+
+.services .card-body i {
+	color: #ffc107;
+}
+
+.portfolio .card,
+.team .card {
+	border-radius: 22px;
+}
+
+.img-area img {
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+}
+
+.roadmap-icon {
+	align-items: center;
+	background: #ffc107;
+	border-radius: 50%;
+	color: #17324d;
+	display: inline-flex;
+	font-size: 28px;
+	font-weight: 700;
+	height: 72px;
+	justify-content: center;
+	margin-bottom: 12px;
+	width: 72px;
+}
+
+.contact form {
+	max-width: 760px;
 }
